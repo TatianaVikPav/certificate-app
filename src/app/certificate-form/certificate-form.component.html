@@ -1,0 +1,27 @@
+<p>certificate-form works!</p>
+
+<div class="form-container">
+    <form [formGroup]="certificateForm" (ngSubmit)="onSubmit()">
+  
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" type="text" />
+      <div *ngIf="certificateForm.get('name')?.invalid && certificateForm.get('name')?.touched">
+        Name is required.
+      </div>
+  
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" type="email" />
+      <div *ngIf="certificateForm.get('email')?.invalid && certificateForm.get('email')?.touched">
+        Valid email is required.
+      </div>
+  
+      <label for="course">Course:</label>
+      <input id="course" formControlName="course" type="text" />
+      <div *ngIf="certificateForm.get('course')?.invalid && certificateForm.get('course')?.touched">
+        Course name is required.
+      </div>
+  
+      <button type="submit">Generate Certificate</button>
+    </form>
+  </div>
+  

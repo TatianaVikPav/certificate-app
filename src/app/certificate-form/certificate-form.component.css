@@ -1,0 +1,22 @@
+.form-container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  div {
+    color: red;
+    font-size: 12px;
+  }
+  
