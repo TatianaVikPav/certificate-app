@@ -1,22 +1,94 @@
-.form-container {
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  input {
-    display: block;
-    margin-bottom: 10px;
-    padding: 8px;
-    width: 100%;
-  }
-  
-  label {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  div {
-    color: red;
-    font-size: 12px;
-  }
-  
+/* Центровка всей страницы */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Карточка формы */
+.form-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Заголовок */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a2b4c;
+}
+
+h3 {
+  text-align: left;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #1a2b4c;
+}
+
+/* Поля */
+label {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Кнопка */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a59b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e4591;
+}
+
+/* Сообщение внизу */
+.status-message {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1a2b4c;
+}

@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* ====== Reset and Base ====== */
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+
+/* Центрирование формы */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
